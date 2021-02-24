@@ -17,10 +17,10 @@ def isWin(curX, curY):
       for i in range(2):
         x = a + dx[k][i]
         y = b + dy[k][i]
-        if(0 <= x < sizeN and 0 <= y < sizeM):
-          if(Map[x][y] != stoneColor):
+        if 0 <= x < sizeN and 0 <= y < sizeM:
+          if Map[x][y] != stoneColor:
             continue
-          if(check[x][y] == 0):
+          if check[x][y] == 0:
             check[x][y] = 1
             cnt += 1
             q.append([x, y])
