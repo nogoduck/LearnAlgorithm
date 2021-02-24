@@ -9,7 +9,7 @@ def isWin(curX, curY):
   stoneColor = Map[curX][curY]
   for k in range(4):
     q = deque()    
-    q.append([curX, curY ])
+    q.append([curX, curY])
     check[curX][curY] = 1
     cnt = 1
     while q:
